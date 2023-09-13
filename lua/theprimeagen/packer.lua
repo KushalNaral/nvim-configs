@@ -41,4 +41,9 @@ return require('packer').startup(function(use)
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use('ThePrimeagen/vim-be-good')
+    use({
+        "aserowy/tmux.nvim",
+        config = function() return require("tmux").setup() end
+    })
+    use { "alexghergh/nvim-tmux-navigation" }
 end)
